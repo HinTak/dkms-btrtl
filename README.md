@@ -12,6 +12,8 @@ git archive HEAD | sudo tar -x -C /usr/src/btrtl-0.1
 sudo dkms install btrtl/0.1
 ```
 
+You may need to update your `/usr/lib/firmware/rtl_bt` with the files in `rtl_bt`.
+
 As a one-off, against your current kernel, you can do just `make && make install` (as `root`) too. Reboot to use the new module in either case.
 
 ## How to Remove
